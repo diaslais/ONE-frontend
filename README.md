@@ -1,2 +1,1 @@
-# ONE-frontend
-description
+# Oracle Next Education - Front-end

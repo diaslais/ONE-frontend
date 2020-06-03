@@ -1,0 +1,247 @@
+/* Base */
+.container{
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header{
+    background-image: url(../img/destaque.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2em;
+    text-align: center;
+    height: 19em;
+}
+
+.header .main-menu .menu-item{
+    display: inline-block;
+    margin: 0 0.3em 1.5em 0;
+}
+
+.header .main-menu .menu-item a{
+    text-decoration: none;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 0.3em;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    transition: background-color 0.5s;
+}
+
+.header .main-menu .menu-item a:hover{
+    background-color: #5CAD9E;
+}
+
+.header .panel-main{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-shadow :#1C1F21 1px 1px 5px;
+}
+
+.header .jumbotron .title{
+    color: white;
+    font-size: 3.5em;
+    padding: 0.4em;
+}
+
+.header .jumbotron .subtitle{
+    color: #44BBA4;
+    font-size: 2.5em;
+    padding-bottom: 0.8em;
+}
+
+.header .jumbotron .button{
+    background-color: #44887b;
+    padding: 1.2em;
+    cursor: pointer;
+	border: 0;
+    border-radius: 0.3em;
+    box-shadow :#1C1F21 1px 1px 2px;
+}
+
+.header .jumbotron .button a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* Painel Sobre */
+.panel{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.panel-about .title{
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    line-height: 3rem;
+}
+
+.panel-about .subtitle{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    line-height: 2rem;
+}
+
+.panel-about .content{
+    font-size: 1em;
+    line-height: 2rem;
+    margin-bottom: 2em;
+}
+
+/* Painel Palestrantes */
+.panel-speakers{
+    background-color: #EF7247;
+}
+
+.panel-speakers .speakers{
+    padding-bottom: 1em;
+}
+
+.panel-speakers .title{
+    padding-top: 0.7em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.panel-speakers .subtitle{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.panel-speakers .speaker{
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1em 0.2em;
+    width: 220px;
+    border-radius: 1rem;
+    margin: 0 1em 1em 0;
+}
+
+.panel-speakers .speaker-img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+.panel-speakers .speaker-name{
+    margin-top: 1em;
+}
+
+.panel-speakers .speaker-bio{
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.panel-speakers .speaker-speach{
+    margin-top: 1em;
+}
+
+/* Formulário */
+.form{
+    margin-top: 1.5em;
+    padding-bottom: 1em;
+}
+.form .form-title{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: #E94F37;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+.form .form-box{
+    margin: 0 1em 1em 0.5em;
+    font-family: 'Roboto Condensed', sans-serif;    
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.form .field-input{
+    display: block;
+    width: 100%;
+    border: black solid 1px;
+    border-radius: 0.3em;
+    font-size: 0.7em;
+    line-height: 2em;
+    box-shadow :#5CAD9E 1px 1px 4px;
+    margin: 0.5em 0 1.2em 0;
+}
+
+.form .subscribe{
+    text-align: center;
+    margin-top: 0.4em;
+}
+
+.form .button{
+    background-color: #44887b;
+    padding: 1.5em;
+    cursor: pointer;
+	border: 0;
+    border-radius: 0.3em;
+    box-shadow :#000 1px 1px 3px;
+}
+
+.form .button a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* Versão desktop */
+@media (min-width: 400px){
+    .header{
+        height: 22em;
+    }
+    .header .jumbotron .title{
+        font-size: 4.5em;
+        padding: 0.3em;
+    }
+    .header .jumbotron .subtitle{
+        font-size: 3em;
+        padding-bottom: 1em;
+    }
+    .header .jumbotron .button a{
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 1000px){
+    .header{
+        height: 24em;
+        padding-top: 2.7em;
+    }
+    .header .jumbotron .title{
+        font-size: 5.2em;
+        padding: 0.2em;
+    }
+    .header .jumbotron .subtitle{
+        font-size: 4.2em;
+        padding-bottom: 0.7em;
+    }
+    .header .jumbotron .button a{
+        font-size: 2.2em;
+    }
+    .panel-about .title{
+        font-size: 3em;
+    }
+}
